@@ -1,0 +1,5 @@
+var div = document.getElementById('chat');
+
+div.innerHTML += '<li><div class="user"><%= @response.for %></div><div class="bot"><%= @response.text %></div></li>';
+var input = document.getElementById('response_for');
+input.value = '';
