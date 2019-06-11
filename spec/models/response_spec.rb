@@ -6,5 +6,10 @@ RSpec.describe Response, type: :model do
     	response = Response.new(for: 'anything').text
     	expect(response).to eq 'yo'
     end
+
+     it 'responds with yoyo to yoyo' do
+    	response = Response.new(for: 'yoyo').text
+    	expect(response).to eq 'yoyo'
+    end
   end
 end
